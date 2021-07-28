@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:readmyqr/constants.dart';
 
 class Button extends StatelessWidget {
   final String title;
   final String destination;
+
   Button({this.title, this.destination});
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: MediaQuery.of(context).size.width / 2,
+      width: displayWidth(context) / 2,
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(
               shape: RoundedRectangleBorder(

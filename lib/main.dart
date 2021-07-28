@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:readmyqr/scanner.dart';
+import 'package:readmyqr/screens/create.dart';
+import 'package:readmyqr/screens/scanner.dart';
 
-import 'home.dart';
+import 'screens/home.dart';
 
 void main() => runApp(Myapp());
 
@@ -12,7 +13,7 @@ class Myapp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/scan': (context) => Scanner(),
-        '/generate': (context) => Scanner(),
+        '/generate': (context) => Generate(),
       },
       home: Home(),
     );
